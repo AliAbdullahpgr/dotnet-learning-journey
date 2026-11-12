@@ -55,7 +55,15 @@ var names = students
     .ToList(); // query runs here, result is now fixed
 ```
 
+Note that `ToList()` copies *references*, not objects: it freezes which
+items are in the list, but for a mutable class, changing an object's
+property after the snapshot still shows up inside the snapshot. Only
+additions and removals are frozen. A runnable demo of a deferred query
+vs a snapshot is in `examples/LinqDeferredExecution.cs`.
+
 ## Worked example
+
+### Students
 
 ```csharp
 var students = new List<Student>
