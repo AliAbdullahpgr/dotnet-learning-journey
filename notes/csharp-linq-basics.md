@@ -63,6 +63,33 @@ vs a snapshot is in `examples/LinqDeferredExecution.cs`.
 
 ## Worked example
 
+### A deferred query versus a snapshot
+
+This self-contained example uses LINQ to Objects:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+var numbers = new List<int> { 1, 2, 3, 4 };
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+var snapshot = evenNumbers.ToList(); // evaluates the query now
+
+numbers.Add(6);
+
+Console.WriteLine(string.Join(", ", evenNumbers)); // 2, 4, 6
+Console.WriteLine(string.Join(", ", snapshot));    // 2, 4
+
+numbers.Add(8);
+Console.WriteLine(string.Join(", ", evenNumbers)); // 2, 4, 6, 8
+```
+
+Enumerating `evenNumbers` again runs the query against the current list.
+`snapshot` is a separate list containing the values selected earlier.
+For reference types, `ToList()` copies the references; it does not clone
+the objects themselves.
+
 ### Students
 
 ```csharp
