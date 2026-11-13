@@ -55,6 +55,12 @@ var names = students
     .ToList(); // query runs here, result is now fixed
 ```
 
+Note that `ToList()` copies *references*, not objects: it freezes which
+items are in the list, but for a mutable class, changing an object's
+property after the snapshot still shows up inside the snapshot. Only
+additions and removals are frozen. A runnable demo of a deferred query
+vs a snapshot is in `examples/LinqDeferredExecution.cs`.
+
 ## Worked example
 
 ### A deferred query versus a snapshot
@@ -84,7 +90,7 @@ Enumerating `evenNumbers` again runs the query against the current list.
 For reference types, `ToList()` copies the references; it does not clone
 the objects themselves.
 
-### Filtering and sorting students
+### Students
 
 ```csharp
 var students = new List<Student>
