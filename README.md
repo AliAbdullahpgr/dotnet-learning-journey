@@ -28,9 +28,9 @@ I also practice competitive programming — 200+ problems solved on LeetCode and
 
 ## What's inside
 
-- **`notes/`** — 94 learning notes across C#, ASP.NET Core, EF Core, SQL Server and data structures & algorithms. Each note is a short, focused write-up of one concept.
+- **`notes/`** — 108 learning notes across C#, ASP.NET Core, EF Core, SQL Server and data structures & algorithms. Each note is a short, focused write-up of one concept.
 
-- **`examples/`** — Runnable C# code: two pointers, sliding window, binary search, recursion, sorting, LINQ queries, dynamic programming and LINQ deferred execution. Drop a file into a console project (or a C# script runner) and run it.
+- **`examples/`** — Runnable C# code: two pointers, sliding window, binary search, recursion, sorting, LINQ queries, dynamic programming, LINQ deferred execution and graph traversal (BFS/DFS). Drop a file into a console project (or a C# script runner) and run it.
 
 - Topics are organized by area: `notes/csharp/`, `notes/aspnet/`, `notes/efcore/`, `notes/sql/` and `notes/dsa/`.
 
@@ -39,23 +39,23 @@ I also practice competitive programming — 200+ problems solved on LeetCode and
 
 ### C#
 
-Language fundamentals and OOP, value vs reference types, records, tuples, pattern matching, generics, interfaces, delegates and events, extension methods, async/await, yield iterators, nullable reference types, exception handling, string interpolation and LINQ basics. SOLID principles, design patterns (Singleton, Factory, Strategy, Repository), Docker for .NET apps and unit testing with xUnit and Moq. CQRS with MediatR, clean architecture, Dapper, Span and Memory, and System.Threading.Channels. Source generators and async streams (IAsyncEnumerable).
+Language fundamentals and OOP, value vs reference types, records, tuples, pattern matching, generics, interfaces, delegates and events, extension methods, async/await, yield iterators, nullable reference types, exception handling, string interpolation and LINQ basics. SOLID principles, design patterns (Singleton, Factory, Strategy, Repository), Docker for .NET apps and unit testing with xUnit and Moq. CQRS with MediatR, clean architecture, Dapper, Span and Memory, and System.Threading.Channels. Source generators and async streams (IAsyncEnumerable). Cancellation tokens, primary constructors, reflection basics and garbage collection.
 
 ### ASP.NET Core
 
-Web APIs, routing, controllers, dependency injection, middleware, model binding, validation, configuration, logging and minimal APIs. JWT authentication and refresh tokens, authorization policies and claims, SignalR, gRPC, the Options pattern, background services, API versioning, rate limiting, Serilog structured logging, Swagger/OpenAPI, Redis distributed caching, HttpClientFactory and output caching. Problem Details (RFC 7807) error responses.
+Web APIs, routing, controllers, dependency injection, middleware, model binding, validation, configuration, logging and minimal APIs. JWT authentication and refresh tokens, authorization policies and claims, SignalR, gRPC, the Options pattern, background services, API versioning, rate limiting, Serilog structured logging, Swagger/OpenAPI, Redis distributed caching, HttpClientFactory and output caching. Problem Details (RFC 7807) error responses. Endpoint filters, distributed caching with IDistributedCache and Blazor basics.
 
 ### Entity Framework Core
 
-DbContext and models, CRUD operations and migrations. Change tracking, loading strategies, relationships and performance (AsNoTracking, projections, compiled queries, split queries), raw SQL queries, value converters and global query filters.
+DbContext and models, CRUD operations and migrations. Change tracking, loading strategies, relationships and performance (AsNoTracking, projections, compiled queries, split queries), raw SQL queries, value converters, global query filters and optimistic concurrency tokens.
 
 ### SQL Server
 
-Joins, indexes, transactions, stored procedures, CTEs and window functions. GROUP BY and HAVING, views, database normalization, execution plans and index deep dives.
+Joins, indexes, transactions, stored procedures, CTEs and window functions. GROUP BY and HAVING, views, database normalization, execution plans, index deep dives, locking and isolation levels, and query optimization.
 
 ### Data structures & algorithms
 
-Two pointers, sliding window, binary search, hashmaps, linked lists, stacks and queues, recursion and binary trees — with runnable C# examples in `examples/`. Plus graphs and heaps, with sorting and dynamic programming examples. Also dynamic programming basics, greedy algorithms, tries and segment trees.
+Two pointers, sliding window, binary search, hashmaps, linked lists, stacks and queues, recursion and binary trees — with runnable C# examples in `examples/`. Plus graphs and heaps, with sorting and dynamic programming examples. Also dynamic programming basics, greedy algorithms, tries and segment trees. Also binary search trees, union-find, topological sort and Dijkstra's shortest path.
 
 
 ## Learning roadmap
